@@ -6,6 +6,10 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<PrescriptionContext>(opt =>
+{
+    opt.UseSqlServer("Server=db-mssql16;Database=2019SBD;Trusted_Connection=True;");
+});
 
 var app = builder.Build();
 
