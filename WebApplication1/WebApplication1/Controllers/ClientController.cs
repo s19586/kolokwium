@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using s19586_06.Context;
-using s19586_06.Models;
 using System.Threading.Tasks;
 using WebApplication1.Context;
 
